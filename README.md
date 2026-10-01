@@ -1,16 +1,16 @@
-# 🛒 Análise de Regras de Associação — Varejo Brasil
+# Análise de Regras de Associação — Varejo Brasil
 
 > Descobrindo padrões de comportamento de compra em 9.835 transações de varejo brasileiro com o algoritmo **Apriori**.
 
 ---
 
-## 📌 Objetivo
+## Objetivo
 
 Identificar quais produtos são comprados juntos com frequência, revelando padrões ocultos no comportamento dos consumidores. O resultado prático são **regras de associação acionáveis** — inteligência direta para estratégias de cross-selling, layout de loja e campanhas promocionais.
 
 ---
 
-## 🗂️ Sobre os Dados
+## Sobre os Dados
 
 | Atributo | Detalhe |
 |---|---|
@@ -21,7 +21,7 @@ Identificar quais produtos são comprados juntos com frequência, revelando padr
 
 ---
 
-## 🔄 Fluxo do Projeto
+## Fluxo do Projeto
 
 ```
 Dados brutos (long format)  
@@ -43,7 +43,7 @@ Visualização e Conclusão
 
 ---
 
-## ⚙️ Parâmetros do Modelo
+## Parâmetros do Modelo
 
 | Parâmetro | Valor | Interpretação |
 |---|---|---|
@@ -53,7 +53,7 @@ Visualização e Conclusão
 
 ---
 
-## 📊 Resultados
+## Resultados
 
 | Etapa | Resultado |
 |---|---|
@@ -61,7 +61,7 @@ Visualização e Conclusão
 | Regras com Lift > 1 | **234** |
 | Lift máximo encontrado | **15.66** |
 
-### 🏆 Top 10 Regras por Lift
+### Top 10 Regras por Lift
 
 | Antecedente | Consequente | Confiança | Lift |
 |---|---|---|---|
@@ -76,7 +76,7 @@ Visualização e Conclusão
 
 ---
 
-## 💡 Principais Insights
+## Principais Insights
 
 **1. Interdependência de Categorias — Congelados**
 A combinação `legumes congelados + batata congelada → frango congelado` atingiu Lift de **15.66**, provando que esses itens são comprados como uma solução completa de refeição, não de forma isolada. Clientes que levam dois desses produtos têm ~15x mais chance de levar o terceiro.
@@ -89,7 +89,7 @@ Regras envolvendo `produto de limpeza`, `detergente` e `papel higiênico` aparec
 
 ---
 
-## 🧰 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 - **Python**
 - **Pandas** — manipulação e exploração dos dados
